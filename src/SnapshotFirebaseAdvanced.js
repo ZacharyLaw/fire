@@ -65,7 +65,7 @@ function SnapshotFirebaseAdvanced() {
     );
 
     setLoading(true);
-    // const unsub = onSnapshot(q, (querySnapshot) => {
+    // const unsub = onSnapshot(q, (querySnapshot) => { // uses sql filters
     const unsub = onSnapshot(colletionRef, (querySnapshot) => {
       const items = [];
       querySnapshot.forEach((doc) => {
